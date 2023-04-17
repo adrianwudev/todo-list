@@ -80,6 +80,8 @@
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
+      <!-- Convert all dependencies to Jakarta by upgrading to Tomcat 11,
+       as some parts of Tomcat 10 still use javax -->
       <plugin>
         <groupId>org.codehaus.cargo</groupId>
         <artifactId>cargo-maven3-plugin</artifactId>
