@@ -1,6 +1,9 @@
 package ad.adlearn.model;
 
+import lombok.Data;
 import org.jetbrains.annotations.NotNull;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -8,6 +11,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.ListIterator;
 
+@Repository
 public class TodoData {
     private static int idValue = 1;
     private final List<TodoItem> items = new ArrayList<>();
@@ -17,6 +21,7 @@ public class TodoData {
         addItem(new TodoItem("first", "first detail", LocalDate.now()));
         addItem(new TodoItem("second", "second detail", LocalDate.now()));
         addItem(new TodoItem("third", "third detail", LocalDate.now()));
+        addItem(new TodoItem("forth", "forth detail", LocalDate.now()));
     }
 
     public List<TodoItem> getItems() {
