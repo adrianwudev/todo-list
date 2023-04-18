@@ -4,6 +4,7 @@
 3. Especially include the following dependencies:
     1. spring-webmvc
     2. jakarta.servlet-api
+    3. jstl 
 4. Especially include the following plugins:
     1. maven-war-plugin, is used to package project as a war file.  
     2. cargo-maven3-plugin, supports a wide range of containers, including `Tomcat`, Jetty, JBoss, and WebSphere, among others.

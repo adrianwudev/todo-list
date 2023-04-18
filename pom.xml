@@ -16,6 +16,8 @@
     <annotation-api.version>2.1.1</annotation-api.version>
     <java.version>17</java.version>
     <servlet-api.version>6.0.0</servlet-api.version>
+    <jstl-api.version>2.0.0</jstl-api.version>
+    <jstl.version>2.0.0</jstl.version>
   </properties>
 
   <dependencies>
@@ -55,6 +57,26 @@
       <artifactId>jakarta.servlet-api</artifactId>
       <version>${servlet-api.version}</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains</groupId>
+      <artifactId>annotations</artifactId>
+      <version>RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <!-- jstl-api -->
+    <dependency>
+      <groupId>jakarta.servlet.jsp.jstl</groupId>
+      <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+      <version>${jstl-api.version}</version>
+    </dependency>
+
+    <!-- jstl -->
+    <dependency>
+      <groupId>org.glassfish.web</groupId>
+      <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+      <version>${jstl.version}</version>
     </dependency>
 
   </dependencies>
